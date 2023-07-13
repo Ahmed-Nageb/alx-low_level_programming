@@ -4,10 +4,12 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)
+ *puts("\"Programming is like building a multilingual puzzle\n");
  */
 
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle\n");
+	char name[70]=("\"Programming is like building a multilingual puzzle");
+	puts(name"\n");
 	return (0);
 }
