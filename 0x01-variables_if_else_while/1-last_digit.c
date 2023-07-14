@@ -11,11 +11,11 @@
 int main(void)
 {
 	int n;
-
+	int reminder;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there Last digit of 629438752 is 2 and is less than 6 and not 0 */
-	int reminder = n % 10;
+	reminder =  n % 10;
 	if (reminder == 0)
 		printf("Last digit of %d is %d zero\n", n, reminder);
 	else if (reminder <= 5)
