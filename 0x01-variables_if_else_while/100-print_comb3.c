@@ -17,11 +17,11 @@ int main(void)
 	{
 		for (secondNum_iteration = firstNum_iteration; secondNum_iteration <= '9' ; secondNum_iteration++)
 		{
-			if(firstNum_iteration != secondNum_iteration)
+			if (firstNum_iteration != secondNum_iteration)
 			{
 				putchar(firstNum_iteration);
 				putchar(secondNum_iteration);
-				if((firstNum_iteration != '8') || (secondNum_iteration != '9') )
+				if ((firstNum_iteration != '8') || (secondNum_iteration != '9'))
 				{
 					putchar(',');
 					putchar(' ');
