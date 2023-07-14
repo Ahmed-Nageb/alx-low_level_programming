@@ -13,7 +13,7 @@ int main(void)
 	int firstNum_iteration;
 	int secondNum_iteration;
 
-	for (firstNum_iteration = '0'; firstNum_iteration <= '9' ; firstNum_iteration ++)
+	for (firstNum_iteration = '0'; firstNum_iteration <= '9' ; firstNum_iteration++)
 	{
 		for (secondNum_iteration = firstNum_iteration; secondNum_iteration <= '9' ; secondNum_iteration++)
 		{
