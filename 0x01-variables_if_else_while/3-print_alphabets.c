@@ -19,7 +19,7 @@ int main(void)
 		chr++;
 	}
 	chr = 'A';
-        while (chr <= 'Z')
+	while (chr <= 'Z')
 	{
 		putchar(chr);
 		chr++;
