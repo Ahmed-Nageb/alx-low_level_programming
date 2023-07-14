@@ -14,6 +14,7 @@ int main(void)
 	int s_iteration;
 	int t_iteration;
 	int fo_iteration;
+
 	for (f_iteration = '0'; f_iteration <= '9'; f_iteration++)
 	{
 		for (s_iteration = '0'; s_iteration <= '9'; s_iteration++)
