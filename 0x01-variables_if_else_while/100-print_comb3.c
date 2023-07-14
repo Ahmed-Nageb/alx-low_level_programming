@@ -10,18 +10,18 @@
 
 int main(void)
 {
-	int firstNum_iteration;
-	int secondNum_iteration;
+	int f_iteration;
+	int s_iteration;
 
-	for (firstNum_iteration = '0'; firstNum_iteration <= '9' ; firstNum_iteration++)
+	for (f_iteration = '0'; f_iteration <= '9' ; f_iteration++)
 	{
-		for (secondNum_iteration = firstNum_iteration; secondNum_iteration <= '9' ; secondNum_iteration++)
+		for (s_iteration = f_iteration; s_iteration <= '9' ; s_iteration++)
 		{
-			if (firstNum_iteration != secondNum_iteration)
+			if (f_iteration != s_iteration)
 			{
-				putchar(firstNum_iteration);
-				putchar(secondNum_iteration);
-				if ((firstNum_iteration != '8') || (secondNum_iteration != '9'))
+				putchar(f_iteration);
+				putchar(s_iteration);
+				if ((f_iteration != '8') || (s_iteration != '9'))
 				{
 					putchar(',');
 					putchar(' ');
