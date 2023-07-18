@@ -3,7 +3,7 @@
 /**
  * print_alphabet - Function implementation
  *
- * Return: print _ alphabet charachters when its called 
+ * Return: print _ alphabet charachters when its called
  */
 
 void print_alphabet(void)
