@@ -1,9 +1,9 @@
 #include "1-main.h"
 
 /**
- * print_alphabet_Function
+ * print_alphabet - Function implementation
  *
- * print_alphabet
+ * Return: print_alphabet charachters when its called 
  */
 
 void print_alphabet(void)
