@@ -2,9 +2,9 @@
 
 /**
  * jack_bauer - prints every minute of the day
- * 
  *
- * Return: 0 
+ *
+ * Return: 0
  */
 
 void jack_bauer(void)
@@ -26,5 +26,5 @@ void jack_bauer(void)
 		}
 		minutes = 0;
 		hours++;
-	}	
+	}
 }
