@@ -11,29 +11,14 @@ void more_numbers(void)
 	int number;
 	int counter;
 
-	number = 0;
-	counter = 0;
-	while (number <= 14 && counter < 10)
+	for (counter = 0; counter < 10; counter++)
 	{
-		if (number <= 9)
+		for (number = 0; number <= 14; number++)
 		{
-			_putchar('0' +  number);
-			number++;
+			if (number / 10 > 0)
+				_putchar('1');
+			_putchar((number % 10) + '0');
 		}
-		else
-		{
-			_putchar('1');
-			_putchar('0' + number-10);
-			number++;
-
-
-		}
-		if(number == 15)
-		{
-			counter++;
-			number = 0;
-			_putchar('\n');
-		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
