@@ -3,6 +3,7 @@
 /**
  * print_line - lines
  * @c: number of '-'
+ * 
  * Return: (Success)
  */
 
@@ -18,7 +19,7 @@ void print_line(int n)
 	{
 		for (counter = 0; counter < n; counter++)
 		{
-			_putchar('-');
+			_putchar('_');
 		}
 		_putchar('\n');
 	}
