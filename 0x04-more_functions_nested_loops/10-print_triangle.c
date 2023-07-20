@@ -1,17 +1,27 @@
 #include "main.h"
 
 /**
- * _isupper - checks for lowercase character
- * @c: The character to be checked
- * ASCII 65->90 :Capital letters
- *	97->122 :Lowercase letters
- * Return: 1 if the number is lowercase , 0 otherwise
+ * print_triangle - print traingle with #'s with given size
+ * @size: size of triangle to draw
  */
 
-int _isupper(int c)
+void print_triangle(int size)
 {
-	if (c >= 65 && c <= 90)
-		return (1);
-	else
-		return (0);
+	int height;
+	int width;
+	int draw;
+
+	if (size <= 0)
+		_putchar('\n');
+
+	for (height = 1; height <= size; height++)
+	{
+		for (width = 1; width <= (size - height); width++)
+			_putchar(' ');
+
+		for (draw = 1; draw <= height; draw++)
+			_putchar('#');
+
+		_putchar('\n');
+	}
 }
