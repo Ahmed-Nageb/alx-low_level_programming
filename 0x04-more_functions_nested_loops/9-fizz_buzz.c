@@ -21,7 +21,7 @@ int main(void)
 		else if (counter % 5 == 0)
 			printf("Buzz");
 		else
-			printf("%d ", counter);
+			printf("%d", counter);
 	}
 	printf("\n");
 	return (0);
