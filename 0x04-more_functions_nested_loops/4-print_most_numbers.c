@@ -14,7 +14,10 @@ void print_most_numbers(void)
 	while (number < 10)
 	{
 		if (number == 2 || number == 4)
+		{
+			number++;
 			continue;
+		}
 		_putchar('0' +  number);
 		number++;
 	}
