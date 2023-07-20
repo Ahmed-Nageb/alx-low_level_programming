@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line - lines
+ * print_line - print the character "_" n times to draw a line
  * @n: number of '-'
  * 
  * Return: (Success)
@@ -18,9 +18,7 @@ void print_line(int n)
 	else
 	{
 		for (counter = 0; counter < n; counter++)
-		{
 			_putchar('_');
-		}
 		_putchar('\n');
 	}
 }
