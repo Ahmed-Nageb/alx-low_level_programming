@@ -3,8 +3,6 @@
 /**
  * print_line - print the character "_" n times to draw a line
  * @n: number of '_'
- * 
- * Return: no return
  */
 
 void print_line(int n)
