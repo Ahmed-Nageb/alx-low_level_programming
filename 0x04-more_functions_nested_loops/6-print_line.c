@@ -2,7 +2,7 @@
 
 /**
  * print_line - lines
- * @c: number of '-'
+ * @n: number of '-'
  * 
  * Return: (Success)
  */
