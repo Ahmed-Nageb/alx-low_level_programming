@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_puts - take a pointer str
+ *print_rev - take a pointer str
  *@s: pointer to str
  *Return: none.
  */
@@ -19,9 +19,9 @@ void print_rev(char *s)
 		s++;
 	}
 
-	while (len >= 0)
+	while (len > 0)
 	{
-		_putchar(*(temp_ptr + len));
+		_putchar(*(temp_ptr + len-1));
 		len--;
 	}
 
