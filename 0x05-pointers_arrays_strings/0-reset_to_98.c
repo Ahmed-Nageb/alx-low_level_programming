@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * vreset_to_98 - take a pointer to an int as parameter and
+ * _reset_to_98 - take a pointer to an int as parameter and
  * updates the value it points to to 98.
  * @n: int to be checked
  * Return: nothing.
