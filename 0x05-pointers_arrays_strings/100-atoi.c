@@ -12,6 +12,7 @@ int _atoi(char *s)
 {
 	int res = 0;
 	int i;
+	int sign = 1;
 
 	for (i = 0; s[i] != '\0'; ++i)
 	{
@@ -19,7 +20,12 @@ int _atoi(char *s)
 			continue;
 		if (s[i] == '-')
 		{
-			res *= -1;
+			sign *= -1;
+			continue;
+		}
+
+		if (s[i] == '+')
+		{
 			continue;
 		}
 
