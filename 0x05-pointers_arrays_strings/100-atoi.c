@@ -11,10 +11,20 @@
 int _atoi(char *s)
 {
 	int res = 0;
-    int i;
+	int i;
 
 	for (i = 0; s[i] != '\0'; ++i)
-		res = res *10 + s[i] - '0';
+	{
+		if (str == ' ')
+			continue;
+		if (str[i] == '-')
+		{
+			res *= -1;
+			continue;
+		}
 
-	return res;
+		res = res *10 + s[i] - '0';
+	}
+
+	return (res);
 }
