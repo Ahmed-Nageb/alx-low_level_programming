@@ -29,8 +29,8 @@ int _atoi(char *s)
 			continue;
 		}
 
-		res = res *10 + s[i] - '0';
+		res = res * 10 + s[i] - '0';
 	}
 
-	return (res);
+	return (sign * res);
 }
