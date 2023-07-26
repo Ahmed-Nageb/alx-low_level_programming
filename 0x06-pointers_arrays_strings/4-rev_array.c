@@ -2,8 +2,8 @@
 
 /**
  *reverse_array - function that reverses a string.
- *@a: char to be checked
- *@n: the number of elements of the array
+ * @a : char to be checked
+ * @n : the number of elements of the array
  *Return: nothing
  */
 
