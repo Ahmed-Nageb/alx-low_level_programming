@@ -2,12 +2,12 @@
 
 /**
  *_strcat - function that concat. a string to another one.
- *@desr: dest. string
+ *@dest: dest. string
  *@src: src. string
  *Return: dest string
  */
 
-char *_strcat(char *dest, char *src);
+char *_strcat(char *dest, char *src)
 {
 	int length;
 	int index;
@@ -27,5 +27,5 @@ char *_strcat(char *dest, char *src);
 	}
 
 	dest[length] = '\0';
-	ret(dest);
+	return (dest);
 }
