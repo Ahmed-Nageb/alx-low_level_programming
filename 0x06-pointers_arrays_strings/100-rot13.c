@@ -3,7 +3,7 @@
 /**
  *rot13 - check the code for Holberton School students.
  *@s: String to be converted
- *Return: Always 0.
+ *Return: string
  */
 char *rot13(char *s)
 {
