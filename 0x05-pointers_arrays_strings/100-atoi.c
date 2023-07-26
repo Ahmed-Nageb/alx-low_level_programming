@@ -29,8 +29,14 @@ int _atoi(char *s)
 			continue;
 		}
 
-		res = res * 10 + s[i] - '0';
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			res = res * 10 + s[i] - '0';
+		}
 	}
 
-	return (sign * res);
+	if (res == 0)
+		return (0);
+	else
+		return (sign * res);
 }
