@@ -33,6 +33,10 @@ int _atoi(char *s)
 		{
 			res = res * 10 + s[i] - '0';
 		}
+		else if (res == 0)
+		{
+			continue;
+		}
 		else
 		{
 			break;
