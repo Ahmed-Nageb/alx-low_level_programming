@@ -7,9 +7,6 @@
  *Return: pointer to string
  */
 
-Prototype: char *cap_string(char*);
-//    Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (,), {, and }
-
 char *cap_string(char *s)
 {
 	int ind;
@@ -17,7 +14,7 @@ char *cap_string(char *s)
 
 	ind = 0;
 	counter = 0;
-	while (s[ind])
+	while (s[ind] != '\0')
 	{
 		if (counter == 0)
 		{
@@ -41,9 +38,8 @@ char *cap_string(char *s)
 			counter = 0;
 		else
 			counter++;
+		ind++;
 	}
-
-	ind++;
 
 	return (s);
 }
