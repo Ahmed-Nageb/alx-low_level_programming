@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- **string_toupper - function that concat. a string to another one.
- *@s: input. string
+ ** string_toupper - function that concat. a string to another one.
+ * @s: input. string
  *
- *Return: string
+ * Return: pointer to string
  */
 char *string_toupper(char *s)
 {
