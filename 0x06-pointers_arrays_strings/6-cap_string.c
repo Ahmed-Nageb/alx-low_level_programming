@@ -1,22 +1,49 @@
 #include "main.h"
 
 /**
- ** string_toupper - function that concat. a string to another one.
- * @s: input. string
+ ***cap_string - function that concat. a string to another one.
+ *@s: input. string
  *
- * Return: pointer to string
+ *Return: pointer to string
  */
-char *string_toupper(char *s)
+
+Prototype: char *cap_string(char*);
+//    Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (,), {, and }
+
+char *cap_string(char *s)
 {
-	while (*s)
+	int ind;
+	int counter;
+
+	ind = 0;
+	counter = 0;
+	while (s[ind])
 	{
-		if (*s >= 'a' && *s <= 'z')
+		if (counter == 0)
 		{
-			*s = *s - 32;
+			if ((s[ind] >= 'a' && s[ind] <= 'z'))
+			{
+				s[ind] = s[ind] - 32;
+			}
+			else
+				counter++;
 		}
 
-		s++;
+		if (s[ind] == '!' || s[ind] == '"' || s[ind] == '(' || s[ind] == ')')
+			counter = 0;
+		else if (s[ind] == ',' || s[ind] == '.' || s[ind] == '{' || s[ind] == '}')
+			counter = 0;
+		else if (s[ind] == ';' || s[ind] == '?' || s[ind] == '\n')
+			counter = 0;
+		else if (s[ind] == '\t')
+			counter = 0;
+		else if (s[ind] == ' ')
+			counter = 0;
+		else
+			counter++;
 	}
+
+	ind++;
 
 	return (s);
 }
