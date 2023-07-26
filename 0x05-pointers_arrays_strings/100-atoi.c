@@ -31,12 +31,16 @@ int _atoi(char *s)
 
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-			res = res * 10 + s[i] - '0';
+			res = res *10 + s[i] - '0';
+		}
+		else
+		{
+			break;
 		}
 	}
 
 	if (res == 0)
 		return (0);
 	else
-		return (sign * res);
+		return (sign *res);
 }
