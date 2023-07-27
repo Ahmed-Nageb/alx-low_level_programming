@@ -10,14 +10,23 @@ char *rot13(char *s)
 	char str1[52] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char str2[52] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	int iter1, iter2;
+	int iter1, iter2, length;
 
-	for (iter2 = 0; s[iter2] != '\0'; iter2++)
+	length = 0;
+	while ((s[length]) != '\0')
+	{
+		length++;
+	}
+
+	for (iter2 = 0; iter2 < length; iter2++)
 	{
 		for (iter1 = 0; str1[iter1] != '\0'; iter1++)
 		{
 			if (s[iter2] == str1[iter1])
+			{
 				s[iter2] = str2[iter1];
+				break;
+			}
 		}
 	}
 
