@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- **_strchr - a function that locates a character in a string.
+ **_strchr - a function that copies memory area.
  *@s: the address of memory that will search inside
  *@c: char to find its location
  *Return: *s.
@@ -24,5 +25,5 @@ char *_strchr(char *s, char c)
 		}
 	}
 
-	return (0);
+	return (NULL);
 }
