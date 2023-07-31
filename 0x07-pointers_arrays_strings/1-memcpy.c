@@ -1,5 +1,5 @@
 /**
- **_memcpy - a function that fills memory with a constant byte.
+ **_memcpy - a function that copies memory area.
  *@dest: the address of memory that will copy to
  *@src: the address of memory that will copy from
  *@n: number of bytes
