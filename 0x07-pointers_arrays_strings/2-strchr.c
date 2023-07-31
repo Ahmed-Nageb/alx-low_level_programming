@@ -2,9 +2,8 @@
 
 /**
  **_strchr - a function that copies memory area.
- *@dest: the address of memory that will copy to
- *@src: the address of memory that will copy from
- *@n: number of bytes
+ *@s: the address of memory that will search inside
+ *@c: char to find its location
  *Return: Nothing.
  */
 
