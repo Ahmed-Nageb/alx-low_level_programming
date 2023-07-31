@@ -17,10 +17,7 @@ char *rot13(char *s)
 		for (iter1 = 0; str1[iter1] != '\0'; iter1++)
 		{
 			if (s[iter2] == str1[iter1])
-			{
 				s[iter2] = str2[iter1];
-				break;
-			}
 		}
 	}
 
