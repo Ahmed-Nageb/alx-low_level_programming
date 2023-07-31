@@ -10,8 +10,9 @@
 
 char *_strchr(char *s, char c)
 {
-	int iter = 0;
+	int iter;
 
+	iter = 0;
 	while (s[iter] != '\0')
 	{
 		if (s[iter] == c)
