@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  **_memcpy - a function that copies memory area.
  *@dest: the address of memory that will copy to
