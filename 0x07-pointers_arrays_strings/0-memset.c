@@ -1,7 +1,7 @@
 /**
  **_memset - a function that fills memory with a constant byte.
  *@s: the address of memory
- *@b: constant byte 
+ *@b: constant byte
  *@n: number of bytes
  *Return: Nothing.
  */
