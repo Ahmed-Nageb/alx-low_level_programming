@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- **_strchr - a function that copies memory area.
+ **_strchr - a function that locates a character in a string.
  *@s: the address of memory that will search inside
  *@c: char to find its location
- *Return: Nothing.
+ *Return: *s.
  */
 
 char *_strchr(char *s, char c)
