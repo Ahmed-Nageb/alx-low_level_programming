@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	location = malloc(sizeof(unsigned int) * size);
+	location = (char *) malloc(sizeof(char) * size);
 	if (location != NULL)
 	{
 		location[size] = '\0';
