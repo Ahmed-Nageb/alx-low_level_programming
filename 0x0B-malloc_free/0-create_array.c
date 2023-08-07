@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
+ * create_array - prints buffer in hexa
  * @c: the charachter to be filled at memory
  * @size: the size of the memory to allocate
  *
@@ -17,12 +17,12 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 
-	location = malloc(sizeof(size) * size);
+	location = malloc(sizeof(unsigned int) * size);
 	if (location != NULL)
 	{
 		while (size)
 		{
-			location[size-1] = c;
+			location[size - 1] = c;
 			size--;
 		}
 	}
