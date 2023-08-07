@@ -30,14 +30,23 @@ char *str_concat(char *s1, char *s2)
 	if (dup == NULL)
 		return (NULL);
 
-	while ((dup[i] = s1[i]) != '\0')
-		i++;
-
-
-	while ((dup[i] = s2[j]) != '\0')
+	if (s1)
 	{
-		i++;
-		j++;
+		while (i < len1)
+		{
+			(dup[i] = s1[i]);
+			i++;
+		}
+	}
+
+	if (s2)
+	{
+		while (i < (len1 + len2))
+		{
+			(dup[i] = s2[j]);
+			i++;
+			j++;
+		}
 	}
 
 	dup[i] = '\0';
