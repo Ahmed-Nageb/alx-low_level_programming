@@ -4,10 +4,10 @@
 
 /**
  * simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
- * @size: the size of the memory to print
+ * @c: the charachter to be filled at memory
+ * @size: the size of the memory to allocate
  *
- * Return: Nothing.
+ * Return: address or NULL.
  */
 
 char *create_array(unsigned int size, char c)
@@ -22,7 +22,7 @@ char *create_array(unsigned int size, char c)
 	{
 		while (size)
 		{
-			location[size] = c;
+			location[size-1] = c;
 			size--;
 		}
 	}
