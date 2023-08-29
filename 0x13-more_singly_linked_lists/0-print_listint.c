@@ -3,12 +3,12 @@
 #include <stddef.h>
 
 /**
- * print_listint - prints a listint with newlines between
- * each node's value
+ *print_listint - prints a listint with newlines between
+ *each node's value
  *
- * @h: head of list to print
+ *@h: head of list to print
  *
- * Return: length of list
+ *Return: length of list
  */
 
 size_t print_listint(const listint_t *h)
