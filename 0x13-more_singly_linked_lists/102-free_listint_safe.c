@@ -8,7 +8,7 @@
  *
  *Return: address of node where loop starts/returns, NULL if no loop
  */
-listint_t* find_listint_loop_fl(listint_t *head)
+listint_t *find_listint_loop_fl(listint_t *head)
 {
 	listint_t *ptr, *end;
 

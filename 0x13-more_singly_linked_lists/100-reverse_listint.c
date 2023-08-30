@@ -9,7 +9,7 @@
  *
  *Return: void
  */
-listint_t* reverse_recur(listint_t *first, listint_t *second)
+listint_t *reverse_recur(listint_t *first, listint_t *second)
 {
 	listint_t *ptr, *prev = NULL;
 
