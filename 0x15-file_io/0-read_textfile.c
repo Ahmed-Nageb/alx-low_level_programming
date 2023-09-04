@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * get_bit - returns the value of a bit at a given index
+ * read_textfile - Reads a text file and prints it to POSIX stdout.
  *
  * @filename: text file
  * @letters: where letters is the number of letters it should read and print
